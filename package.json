@@ -2,10 +2,30 @@
   "name": "dcpull",
   "version": "1.0.0",
   "main": "index.js",
+  "preferGlobal": true,
+  "description": "docker-compose pull command that can fetch the dependensies as well",
   "license": "MIT",
   "bin": "./index.js",
   "dependencies": {
     "js-yaml": "^3.8.2",
     "shelljs": "^0.7.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serkanyersen/dcpull.git"
+  },
+  "bugs": {
+    "url": "https://github.com/serkanyersen/dcpull/issues"
+  },
+  "homepage": "https://github.com/serkanyersen/dcpull#readme",
+  "author": "Serkan Yersen",
+  "keywords": [
+    "docker",
+    "docker-compose",
+    "pull",
+    "depends_on",
+    "dependencies",
+    "utility",
+    "dev tools"
+  ]
 }
