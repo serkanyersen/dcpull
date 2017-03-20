@@ -1,0 +1,19 @@
+##############################
+# Test file
+##############################
+version: '2.1'
+services:
+
+  redis:
+    image: redis
+
+  nginx:
+    image: nginx
+    depends_on:
+      - redis
+
+  hello-world:
+    image: hello-world
+    depends_on:
+      nginx:
+        condition: service_healthy
