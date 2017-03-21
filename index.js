@@ -48,7 +48,7 @@ function getDependents(app) {
 }
 getDependents(app);
 
-console.log(`${app} is depending on ${chalk.green(dependents.length)} services.`);
+console.log(`${app} depends on ${chalk.green(dependents.length)} services.`);
 console.log(dependents.map(n => ' - ' + chalk.yellow(n)).join('\n'));
 
 const rl = readline.createInterface({
