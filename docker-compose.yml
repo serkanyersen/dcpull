@@ -3,6 +3,8 @@
 ##############################
 version: '2.1'
 services:
+  node:
+    image: node
 
   redis:
     image: redis
@@ -14,6 +16,8 @@ services:
 
   hello-world:
     image: hello-world
+    volumes_from:
+      - node
     depends_on:
       nginx:
         condition: service_healthy
